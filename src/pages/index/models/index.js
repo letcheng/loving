@@ -12,7 +12,7 @@ export default {
         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG18.jpeg',
         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG19.jpeg',
           ],
-       //audio: 'https://gw.alipayobjects.com/mdn/rms_5a3769/afts/file/A*J8viRpimNkIAAAAAAAAAAABkARQnAQ'  
+       audio: 'https://gw.alipayobjects.com/mdn/rms_5a3769/afts/file/A*J8viRpimNkIAAAAAAAAAAABkARQnAQ'  
     },
     reducers: {
         setState(state, {payload}) {
