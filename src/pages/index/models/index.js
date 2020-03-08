@@ -2,16 +2,27 @@ export default {
     namespace: 'index',
     state: {
        time: '初始化中',
-       images: [
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG17.jpeg',
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG12.jpeg',
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG13.jpeg',
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG14.jpeg',   
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG11.jpeg', 
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG16.jpeg',
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG18.jpeg',
-        'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG19.jpeg',
-          ],
+      //  images: [
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG17.jpeg',
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG12.jpeg',
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG13.jpeg',
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG14.jpeg',   
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG11.jpeg', 
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG16.jpeg',
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG18.jpeg',
+      //   'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/WechatIMG19.jpeg',
+      //     ],
+       images:[
+       
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG29.jpeg',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG30.jpeg',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG32.jpeg',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG34.jpeg',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG35.jpeg?x-oss-process=image/rotate,360',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG36.jpeg?x-oss-process=image/rotate,360',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG37.jpeg?x-oss-process=image/rotate,360',
+        
+       ],
        audio: 'https://gw.alipayobjects.com/mdn/rms_5a3769/afts/file/A*J8viRpimNkIAAAAAAAAAAABkARQnAQ'  
     },
     reducers: {
@@ -33,6 +44,12 @@ export default {
                     type: 'init',
                   });
               }, 1000);
+              document.addEventListener('WeixinJSBridgeReady', function() {
+                document.getElementById('audios').play()
+              });
+              document.addEventListener('touchstart', function() {
+                document.getElementById('audios').play()
+              });
             }
           });
         },
