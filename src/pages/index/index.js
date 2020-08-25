@@ -16,7 +16,7 @@ export default connect(state =>({...state.index}))(function(props) {
             <div className={styles['modal-header']}>
               <h2>the times we together</h2>
               <p>小蚂蚁 & 小青橙</p>
-              <p>一路相伴, 感谢有你</p>
+              <p>一路相伴， 感谢有你</p>
             </div>
             <div className={styles['modal-body']}>
               <p className={styles.time}>

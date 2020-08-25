@@ -20,7 +20,8 @@ export default {
          'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG34.jpeg',
          'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG35.jpeg?x-oss-process=image/rotate,360',
          'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG36.jpeg?x-oss-process=image/rotate,360',
-         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG37.jpeg?x-oss-process=image/rotate,360',
+        // 'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG37.jpeg?x-oss-process=image/rotate,360',
+         'https://luckingus.oss-cn-hangzhou.aliyuncs.com/loving/v1/WechatIMG163.jpeg',
         
        ],
        audio: 'https://gw.alipayobjects.com/mdn/rms_5a3769/afts/file/A*J8viRpimNkIAAAAAAAAAAABkARQnAQ'  
